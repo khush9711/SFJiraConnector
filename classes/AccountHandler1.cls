@@ -1,0 +1,21 @@
+public class AccountHandler1{
+
+    public static Account insertNewAccount (String accName) {
+        
+    if(accName!=''){    
+        try{
+            Account a = new Account(Name=accName);
+            insert a;
+            System.debug('Bravo Andrè! Account created');
+            return a;
+        } catch(Exception e){
+            System.Debug('Account not created');
+            return null;
+        }
+    } else {
+        return null;
+    }
+     
+        
+    }    
+}
